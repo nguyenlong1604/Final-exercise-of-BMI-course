@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  color: #333;
+  margin: 20px;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    background: linear-gradient(45deg, #4CAF50, #3498db); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    font-size: 36px; 
+    text-align: center; 
+    padding-bottom: 10px;
+
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(45, 52, 54);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 15px;
+  border: 2px solid #3498db; 
+}
+
+button {
+  font-size: 15px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 15px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+#result {
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: rgba(45, 52, 54, 1.0);
+  background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+h3 {
+  color: #333;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+p {
+  text-indent: 1.5em; 
+  line-height: 1.6;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+.col-sm-5 {
+  flex: 0 0 67%;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+ul li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+  animation: flyIn 0.9s ease-in-out;
+}
+
+ul li:before {
+  content: '\2022'; 
+  color: rgba(253, 203, 110,1.0); 
+  font-size: 30px; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px; 
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  animation: flyIn 0.9s ease-in-out;
+}
